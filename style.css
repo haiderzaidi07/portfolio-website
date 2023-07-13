@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap');
+
+/*  1. Use a more-intuitive box-sizing model.   */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*  2. Remove default margin    */
+* {
+    margin: 0;
+}
+
+/*  Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*  5. Improve media defaults   */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*  6. Remove built-in form typography styles   */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*  7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+body{
+    background-color: #151515;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.logo{
+    color: white;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -0.33px;
+    padding-bottom: 1rem;
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.github, .linkedin, .upwork{
+    list-style: none;
+}
+
+.github svg, .linkedin svg{
+    color: white;
+}
+
+.upwork svg{
+    background-color: white;
+    border-radius: 1rem;
+    padding: .2rem;
+}
+
+.upwork path{
+    transform: translateX(1px) translateY(1px);
+    color: #151515;
+}
+
+.github svg:hover, .linkedin svg:hover{
+    color: #4EE1A0;
+}
+
+.upwork svg:hover{
+    background-color: #4EE1A0;
+}
+
+.hero{
+    margin: 0 1rem;
+    padding: 4rem 0 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.hero-title{
+    color: white;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    letter-spacing: -1.14px;
+    text-align: center;
+}
+
+.hero-description{
+    color: #d9d9d9;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.contact-button, .view-project, .view-code, .send-email-button{
+    color: white;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2.29px;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid #4EE1A0;
+    height: 2rem;
+    padding: 0 0 2rem 0;
+    cursor: pointer;
+}
+
+.contact-button:hover, .view-project:hover, .view-code:hover, .send-email-button:hover{
+    color: #4EE1A0;
+}
+
+.technologies{
+    padding: 3rem 0;
+    margin: 0 1rem;
+}
+
+.technologies ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    background: #151515;
+}
+
+.tech{
+    list-style: none;
+    padding-bottom: 2rem;
+}
+
+.tech:last-child{
+    padding-bottom: 0;
+}
+
+.tech-title{
+    color: white;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.hero-name{
+    text-decoration: underline #4EE1A0;
+    text-underline-offset: 5px;
+}
+
+.tech-exp{
+    color: #d9d9d9;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: underline #4EE1A0;
+    text-underline-offset: 2px;
+}
+
+.tech-rings{
+    border: 1px solid red;
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+}
+
+.projects{
+    padding: 5.5rem 0;
+    margin: 0 1rem;
+}
+
+.flex-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.projects-heading{
+    color: white;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: -1.14px;
+    font-size: 2.5rem;
+}
+
+.project-image{
+    color: white;
+    width: 100%;
+    padding-top: 2.5rem;
+}
+
+.project:first-child .project-image{
+    padding-top: 0;
+}
+
+.project-title{
+    color: white;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.75rem 0;
+}
+
+.project-tech{
+    padding: 0 0 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.project-tech li{
+    color: #d9d9d9;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    list-style: none;
+}
+
+.view-project{
+    margin-right: 2rem;
+}
+
+.contact{
+    background-color: #242424;
+    padding: 4rem 1rem 5.5rem 1rem;
+}
+
+.contact-heading{
+    color: white;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: -1.14px;
+    text-align: center;
+}
+
+.contact-description{
+    color: #d9d9d9;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1.25rem 0;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.name, .email, .message{
+    color: #d9d9d9;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: -0.22px;
+    width: 100%;
+    background: none;
+    border: 0;
+    border-bottom: 2px solid white;
+    padding: 1.75rem 0 1rem 1.5rem;
+}
+
+.message{
+    resize: none;
+}
+
+.name:focus, .email:focus, .message:focus{
+    outline: none;
+    border-bottom: 2px solid #4EE1A0;
+}
+
+.email:invalid{
+    border-bottom: 2px solid #FF6F5B;
+}
+
+.send-email-button{
+    margin-top: 2.5rem;
+}
+
+hr{
+    border: 1px solid white;
+    margin: 0 1rem;
+}
+
+footer{
+    background-color: #242424;
+}
+
+.footer-nav{
+    padding-top: 2.25rem;
+}
+
+.copyright{
+    color: #d9d9d9;
+    font-family: 'Space Grotesk' , Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1.75rem 0 0.75rem 0;
+}
+
+@media (min-width: 50em){
+    
+    header{
+        margin: 0 10.25rem;
+        padding-top: 2.5rem;
+    }
+    
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding: 0;
+    }
+
+    .hero{
+        margin: 0 10.25rem;
+        padding-bottom: 6rem;
+        align-items: flex-start;
+    }
+
+    .hero-title{
+        font-size: 5.5rem;
+        letter-spacing: -2.5px;
+        line-height: 5.5rem;
+        text-align: left;
+        width: 80%;
+        padding: 4rem 0 1rem 0;
+    }
+    
+    .hero-description{
+        font-size: 1.125rem;
+        text-align: left;
+        width: 75%;
+        padding-bottom: 5rem;
+    }
+
+    hr{
+        margin: 0 10.25rem;
+    }
+
+    .line-two{
+        display: none;
+    }
+
+    .technologies{
+        margin: 0 10.25rem;
+        padding: 4.5rem 0;
+    }
+
+    .technologies ul{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .tech{
+        width: 33.3%;
+        padding-bottom: 4rem;
+    }
+
+    .tech-title{
+        font-size: 3rem;
+        letter-spacing: -1.5px;
+        text-align: left;
+    }
+    
+    .tech-exp{
+        font-size: 1.125rem;
+        text-align: left;
+    }
+
+    .projects{
+        margin: 0 10.25rem;
+    }
+
+    .projects-heading{
+        font-size: 5.5rem;
+        letter-spacing: -2.5px;
+    }
+
+    .flex-container-2{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    
+    .project{
+        flex-basis: calc(50% - 1rem);
+    }
+
+    .project:first-child .project-image{
+        padding-top: 2.5rem;
+    }
+
+    .contact{
+        padding: 4.5rem 10.25rem 5.75rem 10.25rem;
+        display: flex;
+        gap: 13rem;
+    }
+    
+    .contact > *{
+        flex: 1;
+    }
+
+    .contact-heading{
+        font-size: 5.5rem;
+        letter-spacing: -2.5px;
+        text-align: left;
+    }
+
+    .contact-description{
+        font-size: 1.125rem;
+        text-align: left;
+    }
+
+    .line-three{
+        margin: 0;
+        padding: 0 10.25rem;
+    }
+
+    footer{
+        padding: 0 10.25rem;
+    }
+}
